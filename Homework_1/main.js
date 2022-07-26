@@ -88,7 +88,7 @@
 //9 line of the task!
     let name = prompt("What is your name? :");
     let patronymic = prompt("What is your patronymic? :");
-    let years = prompt("How old are you? :");
+    let years = parseInt(prompt("How old are you : "));
 
     console.log(name + " " + patronymic + " - " + years + " years");
     // console.log(years + " years");
