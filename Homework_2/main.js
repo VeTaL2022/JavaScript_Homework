@@ -112,7 +112,7 @@ console.log('\n\n');
 
 
 // 4 - Створити масив з 10 об'єктами які описують сутність "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
-let user = [
+let users = [
     {
         name: 'Andy',
         username: 'Andy2022',
@@ -175,7 +175,7 @@ let user = [
 // console.log(users[8].password);
 // console.log(users[9].password);
 
-for (let pass = 0; pass < user.length; pass++){
+for (let pass = 0; pass < users.length; pass++){
     // console.log(user[pass].username + ' password = ' + user[pass].password);
-    console.log('password of user_'+user[pass].username +'   =   '+ user[pass].password);
+    console.log('password of user_'+users[pass].username +'   =   '+ users[pass].password);
 }
