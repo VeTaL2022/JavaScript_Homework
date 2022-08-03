@@ -256,72 +256,72 @@
 // - знайти книжку/ки які писали 2 автори
 // - знайти книжку/ки які писав 1 автор
 //
-let books = [
-    {
-        name: 'Blackout',
-        pageCount: 256,
-        authors: [
-            'Dhonielle Clayton',
-            'Tiffany D. Jackson',
-            'Nic Stone',
-            'Angie Thomas',
-            'Ashley Woodfolk',
-            'Nicola Yoon'],
-        genre: ['Psychological', 'Thriller']
-    },
-    {
-        name: 'Wrong Place Wrong Time',
-        pageCount: 416,
-        authors: ['Gillian McAllister'],
-        genre: ['Horror', 'Action']
-    },
-    {
-        name: 'The Silent Patient',
-        pageCount: 368,
-        authors: ['Alex Michaelides'],
-        genre: ['Thriller', 'Drama', 'Detective', 'Psychological thriller', 'Suspense', 'Psychological realism']
-    },
-    {
-        name: 'Where the Crawdads Sing',
-        pageCount: 400,
-        authors: ['Delia Owens'],
-        genre: ['Novel', 'Educational novel', 'Detective', 'Literary fiction']
-    },
-    {
-        name: 'Fire & Blood',
-        pageCount: 752,
-        authors: ['George R. R. Martin'],
-        genre: ['Fantasy']
-    },
-    {
-        name: 'The Time Traveler\'s Wife',
-        pageCount: 592,
-        authors: ['Audrey Niffenegger','Batman'],
-        genre: ['Novel', 'Science fiction', 'Romance', 'Fantasy']
-    }
-];
-let maxPage = books[0];
-let maxGenre = books[0];
-let maxName = books[0];
-let twoAuthors = books[0];
-let oneAuthor = books[0];
-
-for (let book of books){
-    if(book.pageCount > maxPage.pageCount){
-        maxPage = book;
-    }else if(book.genre > maxGenre.genre){
-        maxGenre = book;
-    }else if(book.name > maxName.name){
-        maxName = book;
-    }else if(book.authors.length === 2){
-        twoAuthors = book;
-    }else if(book.authors.length === 1){
-        oneAuthor = book;
-    }
-}
-console.log(maxPage.name);
-console.log(maxGenre.name);
-console.log(maxName.name);
-console.log(twoAuthors.name);
-console.log(oneAuthor.name);
+// let books = [
+//     {
+//         name: 'Blackout',
+//         pageCount: 256,
+//         authors: [
+//             'Dhonielle Clayton',
+//             'Tiffany D. Jackson',
+//             'Nic Stone',
+//             'Angie Thomas',
+//             'Ashley Woodfolk',
+//             'Nicola Yoon'],
+//         genre: ['Psychological', 'Thriller']
+//     },
+//     {
+//         name: 'Wrong Place Wrong Time',
+//         pageCount: 416,
+//         authors: ['Gillian McAllister'],
+//         genre: ['Horror', 'Action']
+//     },
+//     {
+//         name: 'The Silent Patient',
+//         pageCount: 368,
+//         authors: ['Alex Michaelides'],
+//         genre: ['Thriller', 'Drama', 'Detective', 'Psychological thriller', 'Suspense', 'Psychological realism']
+//     },
+//     {
+//         name: 'Where the Crawdads Sing',
+//         pageCount: 400,
+//         authors: ['Delia Owens'],
+//         genre: ['Novel', 'Educational novel', 'Detective', 'Literary fiction']
+//     },
+//     {
+//         name: 'Fire & Blood',
+//         pageCount: 752,
+//         authors: ['George R. R. Martin'],
+//         genre: ['Fantasy']
+//     },
+//     {
+//         name: 'The Time Traveler\'s Wife',
+//         pageCount: 592,
+//         authors: ['Audrey Niffenegger','Batman'],
+//         genre: ['Novel', 'Science fiction', 'Romance', 'Fantasy']
+//     }
+// ];
+// let maxPage = books[0];
+// let maxGenre = books[0];
+// let maxName = books[0];
+// let twoAuthors = books[0];
+// let oneAuthor = books[0];
+//
+// for (let book of books){
+//     if(book.pageCount > maxPage.pageCount){
+//         maxPage = book;
+//     }else if(book.genre > maxGenre.genre){
+//         maxGenre = book;
+//     }else if(book.name > maxName.name){
+//         maxName = book;
+//     }else if(book.authors.length === 2){
+//         twoAuthors = book;
+//     }else if(book.authors.length === 1){
+//         oneAuthor = book;
+//     }
+// }
+// console.log(maxPage.name);
+// console.log(maxGenre.name);
+// console.log(maxName.name);
+// console.log(twoAuthors.name);
+// console.log(oneAuthor.name);
 
