@@ -126,5 +126,47 @@
 // console.log(diamonds);
 //
 // - всі трефи від 9 та більше
-// let clubs = cards.filter(value => value.value >= '9' || value.value === '10');
+// let clubs = cards.filter(value => value.cardSuit === 'clubs' && value.value > '9'  || value.cardSuit === 'clubs' && value.value === '10');
 // console.log(clubs);
+
+// Додатково по reduce
+// Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
+//
+// let cards = [
+//     {cardSuit: 'diamond', value: '6', color: 'red'},
+//     {cardSuit: 'spade', value: 'ace', color: 'black'},
+//     {cardSuit: 'clubs', value: 'king', color: 'red'},
+//     {cardSuit: 'diamond', value: '9', color: 'black'},
+//     {cardSuit: 'clubs', value: 'ace', color: 'red'},
+//     {cardSuit: 'heart', value: 'queen', color: 'red'},
+//     {cardSuit: 'spade', value: '6', color: 'black'},
+//     {cardSuit: 'heart', value: 'king', color: 'black'},
+//     {cardSuit: 'clubs', value: '6', color: 'black'},
+//     {cardSuit: 'spade', value: 'jack', color: 'red'},
+//     {cardSuit: 'heart', value: '10', color: 'black'},
+//     {cardSuit: 'spade', value: 'joker', color: 'black'},
+//     {cardSuit: 'clubs', value: 'queen', color: 'black'},
+//     {cardSuit: 'spade', value: '7', color: 'black'},
+//     {cardSuit: 'heart', value: '6', color: 'red'},
+//     {cardSuit: 'diamond', value: 'jack', color: 'black'}
+// ];
+//
+// const makeCardDesk = cards.reduce(function (accumulator, cardDeck){
+//     if(cardDeck.cardSuit === 'spade'){
+//         accumulator.spades.push(cardDeck);
+//     }else if(cardDeck.cardSuit === 'diamond'){
+//         accumulator.diamonds.push(cardDeck);
+//     }else if(cardDeck.cardSuit === 'heart'){
+//         accumulator.hearts.push(cardDeck);
+//     }else if(cardDeck.cardSuit === 'clubs'){
+//         accumulator.clubs.push(cardDeck);
+//      }
+//     return accumulator;
+// },
+// {
+//     spades:[],
+//     diamonds:[],
+//     hearts:[],
+//     clubs:[]
+// });
+// console.log(makeCardDesk);
