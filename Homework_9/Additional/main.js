@@ -232,9 +232,53 @@
 //             }
 //         }
 //     ];
-// //
-// // Створити під кожен елемент окремий блок. В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блоки.
+// Створити під кожен елемент окремий блок. В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блоки.
+// let mainDiv = document.createElement('div');
+// document.body.appendChild(mainDiv);
 //
+//
+// for(let user of usersList){
+//     let highestKeys = document.createElement('div');
+//     highestKeys.classList.add('highest-keys');
+//     mainDiv.appendChild(highestKeys);
+//
+//     let lowerKeys = document.createElement('div');
+//     lowerKeys.classList.add('lower-keys');
+//     highestKeys.appendChild(lowerKeys);
+//
+//     let lowestKeys = document.createElement('div');
+//     lowestKeys.classList.add('lowest-keys');
+//     lowerKeys.appendChild(lowestKeys);
+//
+//     for(let us in user) {
+//         let key = document.createElement('h4');
+//         if (typeof user[us] !== 'object') {
+//             key.innerText = `${us} - ${user[us]}`;
+//             highestKeys.appendChild(key);
+//     }
+//
+//         if(typeof user[us] === 'object'){
+//             for(let innerKey in user[us]){
+//                 if(typeof user[us][innerKey] !== 'object') {
+//                     let keys = document.createElement('h5');
+//                     keys.innerText = `${innerKey} - ${user[us][innerKey]}`;
+//                     lowerKeys.appendChild(keys);
+//                 }
+//
+//                 if(typeof user[us][innerKey] === 'object'){
+//                     for(let innerInKey in user[us][innerKey]){
+//                         let last = document.createElement('h6');
+//                         last.innerText = `${innerInKey} - ${user[us][innerKey][innerInKey]}`;
+//                         lowestKeys.appendChild(last);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+//
+//
+// 2 - Варіант
 // let div = document.createElement('div');
 // div.classList.add('main');
 // document.body.appendChild(div);
