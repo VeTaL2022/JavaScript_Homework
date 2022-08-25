@@ -48,23 +48,53 @@
   // Your awesome code here.....
   // Написати рекурсивну функцію, яка збирає всі назви класів з файлу rules.html в окремий масив. масив вивести в консоль
 
-  let getClassNames = () =>{
-    let arrayOfClassNames = [];
-    let allElements = document.querySelectorAll('*');
+  // let getClassNames = () =>{
+  //   let arrayOfClassNames = [];
+  //   let allElements = document.querySelectorAll('*');
+  //
+  //   for (let element of allElements) {
+  //     let classes = element.className.toString().split(/\s+/);
+  //
+  //     for(let clas of classes){
+  //       if(clas && arrayOfClassNames.indexOf(clas) === -1){
+  //         arrayOfClassNames.push(clas);
+  //       }
+  //     }
+  //   }
+  //   return arrayOfClassNames;
+  // }
+  // console.log(getClassNames());
 
-    for (let element of allElements) {
-      let classes = element.className.toString().split(/\s+/);
+  // let array = [];
+  // function explorer(htmlElement){
+  //   let children = htmlElement.children;
+  //   if(children.length !== 0){
+  //   let classes = htmlElement.className.substring(6,);
+  //   if(classes.length !== 0) {
+  //     array.push(classes);
+  //   }
+  //     for (const child of children) {
+  //       explorer(child);
+  //     }
+  //   }
+  // }
 
-      for(let clas of classes){
-        if(clas && arrayOfClassNames.indexOf(clas) === -1){
-          arrayOfClassNames.push(clas);
-        }
-      }
-    }
-    return arrayOfClassNames;
-  }
-
-  console.log(getClassNames());
+  // let array = [];
+  // function explorer(htmlElement){
+  //   let children = htmlElement.children;
+  //   if(children.length !== 0){
+  //     let classes = htmlElement.className.substring(6,);
+  //     if(classes.length !== 0) {
+  //       array.push(classes);
+  //     }
+  //     for (const child of children) {
+  //       explorer(child);
+  //     }
+  //   }
+  // }
+  //
+  // explorer(document.body);
+  // console.log(array);
 </script>
 </body>
 </html>
