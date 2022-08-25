@@ -237,6 +237,9 @@
 // document.body.appendChild(mainDiv);
 //
 //
+// let mainDiv = document.createElement('div');
+// document.body.appendChild(mainDiv);
+//
 // for(let user of usersList){
 //     let highestKeys = document.createElement('div');
 //     highestKeys.classList.add('highest-keys');
@@ -244,18 +247,18 @@
 //
 //     let lowerKeys = document.createElement('div');
 //     lowerKeys.classList.add('lower-keys');
-//     highestKeys.appendChild(lowerKeys);
+//     // highestKeys.appendChild(lowerKeys);
 //
 //     let lowestKeys = document.createElement('div');
 //     lowestKeys.classList.add('lowest-keys');
-//     lowerKeys.appendChild(lowestKeys);
+//     // lowerKeys.appendChild(lowestKeys);
 //
 //     for(let us in user) {
 //         let key = document.createElement('h4');
 //         if (typeof user[us] !== 'object') {
 //             key.innerText = `${us} - ${user[us]}`;
 //             highestKeys.appendChild(key);
-//     }
+//         }
 //
 //         if(typeof user[us] === 'object'){
 //             for(let innerKey in user[us]){
@@ -275,6 +278,8 @@
 //             }
 //         }
 //     }
+//     highestKeys.appendChild(lowerKeys);
+//     lowerKeys.appendChild(lowestKeys);
 // }
 //
 //

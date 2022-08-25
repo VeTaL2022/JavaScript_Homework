@@ -253,11 +253,11 @@
 
       let lowerKeys = document.createElement('div');
       lowerKeys.classList.add('lower-keys');
-      highestKeys.appendChild(lowerKeys);
+      // highestKeys.appendChild(lowerKeys);
 
       let lowestKeys = document.createElement('div');
       lowestKeys.classList.add('lowest-keys');
-      lowerKeys.appendChild(lowestKeys);
+      // lowerKeys.appendChild(lowestKeys);
 
       for(let us in user) {
           let key = document.createElement('h4');
@@ -284,6 +284,8 @@
               }
           }
       }
+      highestKeys.appendChild(lowerKeys);
+      lowerKeys.appendChild(lowestKeys);
   }
 </script>
 </body>
