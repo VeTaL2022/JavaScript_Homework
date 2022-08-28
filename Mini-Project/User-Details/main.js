@@ -57,7 +57,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
                         ul.appendChild(li);
 
                         let button = document.createElement('button');
-                        button.classList.add('buttons');
+                        button.classList.add('btn');
                         li.appendChild(button);
 
                         let a = document.createElement('a');

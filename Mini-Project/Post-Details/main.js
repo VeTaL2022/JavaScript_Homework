@@ -13,6 +13,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${titleId}`)
 
         for(let post in posts) {
             let key = document.createElement('h4');
+            key.classList.add('post');
                 key.innerText = `${post}: ${posts[post]}`;
                 postInfo.appendChild(key);
           }

@@ -14,11 +14,14 @@ fetch('https://jsonplaceholder.typicode.com/users')
                 currentUser.classList.add('user-id',user.id);
 
                 let currentUs = document.createElement('h3');
+                currentUs.classList.add('user');
                 currentUs.innerText = `${user.id} - ${user.name} `;
 
                 let button = document.createElement('button');
+                button.classList.add('btn');
 
                 let a = document.createElement('a');
+                a.classList.add('href');
                 a.href = `User-Details/user-details.html?userId=${user.id}`;
                 a.innerText = 'Click';
 
