@@ -1,0 +1,74 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,108,164,1) 35%, rgba(0,212,255,1) 100%);
+}
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-id{
+    margin: 0 auto;
+    width: 40%;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+h5{
+    width: 96.5%;
+    padding: 0 10px;
+
+    background-color: #d1fae6;
+    border: 1px solid blue;
+
+    text-align: center;
+    font-family: MV Boli,sans-serif;
+    font-size: 12px;
+}
+.mainButton{
+    width: 90%;
+    padding: 20px;
+    margin: 22px 0 0 0;
+    background-color: beige;
+    border-radius: 20px;
+
+    text-align: center;
+    font-size: 16px;
+    font-family: Segoe Print,sans-serif;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+li{
+    width: 200px;
+    margin: 25px 20px;
+    padding: 15px;
+
+    border-radius: 12px;
+    border: 2px solid blueviolet;
+
+    background-color: #affa5c;
+    text-align: center;
+    font-family: Ink Free,sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    margin-top: 15px;
+    background-color: #f3eded;
+
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+}
+.buttons > a{
+    width: 100%;
+    text-decoration: none;
+    font-family: Segoe Print,sans-serif;
+}
